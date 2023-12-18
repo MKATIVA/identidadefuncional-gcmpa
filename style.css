@@ -14,7 +14,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     isolation: isolate;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container::after {
@@ -53,22 +53,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .bgImg img {
     width: 500px;
-    height: auto;
     position: absolute;
+    top: 200px;
     opacity: 0.1;
     text-align: center;
     bottom: 10px;
-    z-index: -1;
 }
+
 .assinatura {
-   display: flex;
-   justify-content: center;
-   z-index: 9;
-   margin: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    margin: 20px;
 }
 
 form {
@@ -98,13 +99,14 @@ h1 {
     z-index: 999;
 }
 
-.texto{
+.texto {
     text-align: center;
     margin-top: 10px;
     line-height: 1em;
     font-size: 12px;
     border-top: 1px solid #000;
 }
+
 @media (max-width: 360px) {
     input {
         width: 110%;
