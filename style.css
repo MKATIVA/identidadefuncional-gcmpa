@@ -35,8 +35,11 @@ body {
     margin: 0 15px;
 }
 
-.img-3x4 {
+.img-3x4{
     z-index: 999;
+}
+.img-3x4 img{
+    border-radius: 5px;
 }
 
 .separacao {
