@@ -16,7 +16,6 @@ body {
     isolation: isolate;
     overflow-x: hidden;
 }
-
 .container::after {
     content: "";
     position: absolute;
